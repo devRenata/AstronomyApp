@@ -1,14 +1,14 @@
 import 'package:astronomy/app/core/failure.dart';
 import 'package:astronomy/app/domain/entities/apod.dart';
-import 'package:astronomy/app/domain/repositories/today_apod/today_apod_repository.dart';
+import 'package:astronomy/app/domain/repositories/today_apod_repository.dart';
 import 'package:astronomy/app/domain/usecases/core/usecase.dart';
-import 'package:astronomy/app/domain/usecases/today_apod/fetch_apod_today.dart';
+import 'package:astronomy/app/domain/usecases/fetch_apod_today.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
-import '../../../test_values.dart';
+import '../../test_values.dart';
 import 'fetch_apod_today_test.mocks.dart';
 
 @GenerateNiceMocks([MockSpec<TodayApodRepository>()])
@@ -33,4 +33,4 @@ void main() {
     final result = await usecase(NoParameter());
     expect(result, Left<Failure, Apod>(testNoConnection()));
   });
-} 
+}
