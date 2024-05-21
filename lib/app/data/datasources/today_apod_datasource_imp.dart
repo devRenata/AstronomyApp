@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:astronomy/app/core/failure.dart';
 import 'package:astronomy/app/data/datasources/today_apod_datasource.dart';
 import 'package:astronomy/app/data/models/apod_model.dart';
-import 'package:astronomy/app/environment.dart';
+import 'package:astronomy/environment.dart';
 import 'package:http/http.dart' as http;
 
 class TodayApodDataSourceImp implements TodayApodDataSource {
