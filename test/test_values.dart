@@ -10,7 +10,7 @@ Apod Function() testApod = () => Apod(
   serviceVersion: "v1",
   title: "The Great Nebula in Orion",
   url: "https://apod.nasa.gov/apod/image/0409/orion_seip.jpg",
-  hdurl: "https://apod.nasa.gov/"
+  hdurl: "https://apod.nasa.gov/",
 );
 
 Failure Function() testNoConnection = () => NoConnection();
@@ -23,5 +23,5 @@ ApodModel Function() testApodModel = () => ApodModel(
   serviceVersion: "v1",
   title: "The Great Nebula in Orion",
   url: "https://apod.nasa.gov/apod/image/0409/orion_seip.jpg",
-  hdurl: "https://apod.nasa.gov/"
+  hdurl: "https://apod.nasa.gov/apod/image/0409/orion_seip_big.jpg",
 );
