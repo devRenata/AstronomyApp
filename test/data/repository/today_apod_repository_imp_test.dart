@@ -1,6 +1,6 @@
 import 'package:astronomy/app/core/failure.dart';
-import 'package:astronomy/app/data/data_sources/network_info.dart';
-import 'package:astronomy/app/data/data_sources/today_apod_datasouce.dart';
+import 'package:astronomy/app/data/datasources/network_info.dart';
+import 'package:astronomy/app/data/datasources/today_apod_datasource.dart';
 import 'package:astronomy/app/data/repositories/today_apod_repository_imp.dart';
 import 'package:astronomy/app/domain/entities/apod.dart';
 import 'package:dartz/dartz.dart';
@@ -14,7 +14,7 @@ import 'today_apod_repository_imp_test.mocks.dart';
 @GenerateNiceMocks([MockSpec<TodayApodDataSource>(), MockSpec<NetworkInfo>()])
 // comando para gerar os mocks: flutter pub run build_runner build
 
-main() {
+void main() {
   late MockTodayApodDataSource dataSource;
   late MockNetworkInfo networkInfo;
   late TodayApodRepositoryImp repository;
@@ -28,7 +28,7 @@ main() {
     );
   });
 
-  group('function fetchTodayApod', () {
+  group('Function fetchTodayApod', () {
     test('Must return an Apod entity on the right side of Either', () async {
       when(networkInfo.isConnected).thenAnswer((_) async => true);
       when(dataSource.fetchTodayApod()).thenAnswer((_) async => testApodModel());

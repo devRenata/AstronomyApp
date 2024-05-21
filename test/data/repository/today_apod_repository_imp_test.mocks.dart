@@ -5,8 +5,8 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i4;
 
-import 'package:astronomy/app/data/data_sources/network_info.dart' as _i5;
-import 'package:astronomy/app/data/data_sources/today_apod_datasouce.dart'
+import 'package:astronomy/app/data/datasources/network_info.dart' as _i5;
+import 'package:astronomy/app/data/datasources/today_apod_datasource.dart'
     as _i3;
 import 'package:astronomy/app/data/models/apod_model.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;

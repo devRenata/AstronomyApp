@@ -1,5 +1,5 @@
-import 'package:astronomy/app/data/data_sources/network_info.dart';
-import 'package:astronomy/app/data/data_sources/today_apod_datasouce.dart';
+import 'package:astronomy/app/data/datasources/network_info.dart';
+import 'package:astronomy/app/data/datasources/today_apod_datasource.dart';
 import 'package:astronomy/app/domain/entities/apod.dart';
 import 'package:astronomy/app/core/failure.dart';
 import 'package:astronomy/app/domain/repositories/today_apod_repository.dart';
