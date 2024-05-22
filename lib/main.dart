@@ -1,6 +1,9 @@
+import 'package:astronomy/app/presentation/screens/apod_today_screen.dart';
+import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  await setUpContainer();
   runApp(const AstronomyPicture());
 }
 
@@ -15,7 +18,7 @@ class AstronomyPicture extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: null,
+      home: const ApodTodayScreen(),
     );
   }
 }
