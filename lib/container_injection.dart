@@ -4,7 +4,7 @@ import 'package:astronomy/app/data/datasources/today_apod_datasource_imp.dart';
 import 'package:astronomy/app/data/repositories/today_apod_repository_imp.dart';
 import 'package:astronomy/app/domain/repositories/today_apod_repository.dart';
 import 'package:astronomy/app/domain/usecases/fetch_apod_today.dart';
-import 'package:astronomy/app/presentation/state_manager/today_apod_bloc.dart';
+import 'package:astronomy/app/ui/bloc/today_apod_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart' as http;
 import 'package:internet_connection_checker/internet_connection_checker.dart';

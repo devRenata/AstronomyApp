@@ -1,4 +1,4 @@
-import 'package:astronomy/app/presentation/state_manager/today_apod_bloc.dart';
+import 'package:astronomy/app/ui/bloc/today_apod_bloc.dart';
 import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 

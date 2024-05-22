@@ -1,4 +1,4 @@
-import 'package:astronomy/app/presentation/screens/apod_today_screen.dart';
+import 'package:astronomy/app/ui/screens/apod_today_screen.dart';
 import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 

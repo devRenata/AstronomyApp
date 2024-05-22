@@ -1,6 +1,6 @@
 import 'package:astronomy/app/core/failure.dart';
 import 'package:astronomy/app/domain/usecases/fetch_apod_today.dart';
-import 'package:astronomy/app/presentation/state_manager/today_apod_bloc.dart';
+import 'package:astronomy/app/ui/bloc/today_apod_bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';
