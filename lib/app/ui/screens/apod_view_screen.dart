@@ -28,7 +28,12 @@ class _ApodViewScreenState extends State<ApodViewScreen> {
       appBar: AppBar(
         backgroundColor: CustomColors.white.withOpacity(0.0),
         automaticallyImplyLeading: false,
-        title: const Text("Today's image"),
+        title: const Text(
+          "Today's image",
+          style: TextStyle(
+            fontFamily: 'Neometric',
+          ),
+        ),
         elevation: 0,
         actions: const [],
       ),
@@ -40,10 +45,12 @@ class _ApodViewScreenState extends State<ApodViewScreen> {
             top: 100, // fazer safeare
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ClipRRect(
                 child: Container(
-                  height: 400,
+                  height: 300,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(apod.url ?? ""),
@@ -53,6 +60,24 @@ class _ApodViewScreenState extends State<ApodViewScreen> {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
+              Text(
+                apod.title ?? "",
+                style: const TextStyle(
+                  fontFamily: 'Neometric',
+                  fontSize: 20,
+                ),
+              ),
+              Text(
+                apod.explanation ?? ",",
+                style: TextStyle(
+                  fontFamily: "Awesome",
+                ),
+              ),
+              Text(
+                "by ${apod.copyright ?? "Nasa"}",
+              )
+
             ],
           ),
         ),

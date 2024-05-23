@@ -25,3 +25,17 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - lib/assets/fonts/
+
+  fonts:
+    - family: Neometric
+      fonts:
+      - asset: lib/assets/fonts/neometric-alt-extra-bold.ttf
+        weight: 500
+    
+    - family: Awesome
+      fonts:
+      - asset: lib/assets/fonts/fontawesome.otf
+      weight: 200
