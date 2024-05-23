@@ -1,4 +1,5 @@
 import 'package:astronomy/app/ui/bloc/today_apod_bloc.dart';
+import 'package:astronomy/app/ui/screens/apod_view_screen.dart';
 import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 
@@ -38,12 +39,7 @@ class _ApodTodayScreenState extends State<ApodTodayScreen> {
           );
         }
         if(state is SuccessTodayApodState) {
-          body = Column(
-            children: [
-              Text(state.apod.title ?? ""),
-              Text(state.apod.explanation ?? ""),
-            ],
-          );
+          return ApodViewScreen(apod: state.apod);
         }
         return Scaffold(
           body: body,
