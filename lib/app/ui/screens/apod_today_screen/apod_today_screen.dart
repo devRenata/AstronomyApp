@@ -1,5 +1,5 @@
 import 'package:astronomy/app/ui/bloc/today_apod_bloc.dart';
-import 'package:astronomy/app/ui/screens/apod_view_screen.dart';
+import 'package:astronomy/app/ui/screens/apod_today_screen/apod_view_screen.dart';
 import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 

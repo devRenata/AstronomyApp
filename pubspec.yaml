@@ -38,4 +38,4 @@ flutter:
     - family: Awesome
       fonts:
       - asset: lib/assets/fonts/fontawesome.otf
-      weight: 200
+        weight: 200

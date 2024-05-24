@@ -1,4 +1,4 @@
-import 'package:astronomy/app/ui/screens/apod_today_screen.dart';
+import 'package:astronomy/app/ui/screens/apod_today_screen/apod_today_screen.dart';
 import 'package:astronomy/container_injection.dart';
 import 'package:flutter/material.dart';
 
@@ -21,4 +21,4 @@ class AstronomyPicture extends StatelessWidget {
       debugShowCheckedModeBanner: false,
     );
   }
-}
+} 
