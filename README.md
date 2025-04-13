@@ -1,11 +1,5 @@
 # 📱 Astronomy App
 
-![GitHub repo size](https://img.shields.io/github/repo-size/devRenata/AstronomyApp?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/devRenata/AstronomyApp?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/devRenata/AstronomyApp?style=for-the-badge)
-
-<img align="center" src="https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ilustração da galáxia vermelha e laranja">
-
 > O Projeto Astronomy App foi desenvolvido junto ao canal Caju Code, onde é mostrado como aplicar conhecimentos em TDD e Clean Architecture.
 
 ## Visão Geral
